@@ -57,17 +57,9 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="creditsIcons">
-                    <ul>
-                        {/* <li><img src="https://i.imgur.com/AHCoUZO.png" className="img1"/></li> */}
-                        {/* <li><img src="https://i.imgur.com/JZRipBg.png" className="img2" /></li> */}
-                        {/* <li><img src="https://i.imgur.com/l8OAGyo.png" className="img3" /></li> */}
-                        {/* <li><img src="https://i.imgur.com/IDHC2iv.png" className="img4" /></li> */}
-                    </ul>
-                    
-                </div>
+          
                 
-                {/* <div className="paragraphFooter"><p>Copyright ©2022 All rights reserved | This template is made with ♡ by Ghassen Roudesli</p>
+                {/* <div className="paragraphFooter"><p>Copyright ©2022 All rights reserved | This template is made  by Ghassen Roudesli</p>
                
                 </div> */}
 

@@ -22,7 +22,7 @@ const Home = () => {
                                       
                  </div>
                 <CgDiv/>
-                <ProductsC/>
+                {/* <ProductsC/> */}
         </div>
         </>
     )
