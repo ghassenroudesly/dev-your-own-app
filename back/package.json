@@ -111,8 +111,7 @@
     "dev": "concurrently \"npm run server\" ",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "build": "tsc",
-    "postbuild": "npm-prepare-dist"
+ 
   },
   "engines": {
     "node": "16.x",
