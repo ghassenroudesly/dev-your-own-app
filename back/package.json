@@ -110,8 +110,7 @@
     "server": "nodemon backend/server",
     "dev": "concurrently \"npm run server\" ",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d",
- 
+    "data:destroy": "node backend/seeder -d"
   },
   "engines": {
     "node": "16.x",
