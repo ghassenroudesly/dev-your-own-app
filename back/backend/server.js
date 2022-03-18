@@ -13,6 +13,10 @@ dotenv.config()
 
 connectDB()
 
+const cors = require('cors');
+app.use(cors())
+
+
 const app = express()
 
 if(process.env.NODE_ENV === 'developement'){
