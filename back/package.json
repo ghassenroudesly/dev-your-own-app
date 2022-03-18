@@ -43,6 +43,7 @@
     "gensync": "^1.0.0-beta.2",
     "get-nonce": "^1.0.1",
     "globals": "^11.12.0",
+    "grunt": "^1.4.1",
     "has": "^1.0.3",
     "has-flag": "^3.0.0",
     "hey-listen": "^1.0.8",
@@ -89,6 +90,7 @@
     "safe-buffer": "^5.1.2",
     "scheduler": "^0.20.1",
     "semver": "^6.3.0",
+    "serverless-http": "^2.7.0",
     "source-map": "^0.5.7",
     "style-value-types": "^4.0.3",
     "stylis": "^4.0.7",
@@ -106,13 +108,18 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "dev": "concurrently \"npm run server\" ",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "data:destroy": "node backend/seeder -d"
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "8.5.0"
   },
   "author": " ABDESSAMAD BOURHJOUL & SOUHAIL OUABOU & SOUFIAN ZAAM",
   "license": "MIT",
-  "description": "MERN shopping cart app"
+  "description": "MERN shopping cart app",
+  "devDependencies": {
+    "npm-prepare-dist": "^0.4.0"
+  }
 }
