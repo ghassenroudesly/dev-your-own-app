@@ -43,6 +43,7 @@
     "gensync": "^1.0.0-beta.2",
     "get-nonce": "^1.0.1",
     "globals": "^11.12.0",
+    "grunt": "^1.4.1",
     "has": "^1.0.3",
     "has-flag": "^3.0.0",
     "hey-listen": "^1.0.8",
@@ -107,13 +108,20 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "dev": "concurrently \"npm run server\" ",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d"
+    "data:destroy": "node backend/seeder -d",
+    "build": "tsc",
+    "postbuild": "npm-prepare-dist"
   },
-
+  "engines": {
+    "node": "16.x",
+    "npm": "8.5.0"
+  },
   "author": " ABDESSAMAD BOURHJOUL & SOUHAIL OUABOU & SOUFIAN ZAAM",
   "license": "MIT",
-  "description": "MERN shopping cart app"
-  
+  "description": "MERN shopping cart app",
+  "devDependencies": {
+    "npm-prepare-dist": "^0.4.0"
+  }
 }
