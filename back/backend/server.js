@@ -6,14 +6,20 @@ import morgan from 'morgan'
 import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import  productRoutes  from './routes/productRoutes.js';
-
+import cors from 'cors'
 import {notFound, errorHandler} from './middleware/errorMiddleware.js'
 
 dotenv.config()
 
 connectDB()
 
+
+
+
+
 const app = express()
+
+app.use(cors())
 
 if(process.env.NODE_ENV === 'developement'){
     app.use(morgan('dev'))
