@@ -1,4 +1,4 @@
-/api/* https://backjsdeploy.herokuapp.com/api/products
+/api/* https://backjsdeploy.herokuapp.com/:splat
 /* /index.html 200
 
 
