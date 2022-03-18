@@ -89,6 +89,7 @@
     "safe-buffer": "^5.1.2",
     "scheduler": "^0.20.1",
     "semver": "^6.3.0",
+    "serverless-http": "^2.7.0",
     "source-map": "^0.5.7",
     "style-value-types": "^4.0.3",
     "stylis": "^4.0.7",
