@@ -11,7 +11,7 @@ const Contactus = () => {
     const [body, setbody] = useState('')
 
     const handlesubmit = () =>{
-        window.open(`mailto:firas.benhamida@esprit.tn?subject=Sample&body=${body}`)
+        window.open(`mailto:ghassenroudesly11@gmail.com?subject=Sample&body=${body}`)
     }
     return (
 
